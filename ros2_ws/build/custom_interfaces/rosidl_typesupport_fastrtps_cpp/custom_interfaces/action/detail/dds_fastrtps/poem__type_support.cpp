@@ -37,8 +37,6 @@ cdr_serialize(
   {
     cdr << ros_message.poem;
   }
-  // Member: priority
-  cdr << ros_message.priority;
   return true;
 }
 
@@ -52,9 +50,6 @@ cdr_deserialize(
   {
     cdr >> ros_message.poem;
   }
-
-  // Member: priority
-  cdr >> ros_message.priority;
 
   return true;
 }
@@ -83,12 +78,6 @@ get_serialized_size(
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
         (ros_message.poem[index].size() + 1);
     }
-  }
-  // Member: priority
-  {
-    size_t item_size = sizeof(ros_message.priority);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
   return current_alignment - initial_alignment;
@@ -131,15 +120,6 @@ max_serialized_size_Poem_Goal(
     }
   }
 
-  // Member: priority
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -148,7 +128,7 @@ max_serialized_size_Poem_Goal(
     using DataType = custom_interfaces::action::Poem_Goal;
     is_plain =
       (
-      offsetof(DataType, priority) +
+      offsetof(DataType, poem) +
       last_member_size
       ) == ret_val;
   }

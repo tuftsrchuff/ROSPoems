@@ -35,42 +35,25 @@ struct Poem_Goal_
 
   explicit Poem_Goal_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->priority = 0l;
-    }
+    (void)_init;
   }
 
   explicit Poem_Goal_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
+    (void)_init;
     (void)_alloc;
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->priority = 0l;
-    }
   }
 
   // field types and members
   using _poem_type =
     std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>>;
   _poem_type poem;
-  using _priority_type =
-    int32_t;
-  _priority_type priority;
 
   // setters for named parameter idiom
   Type & set__poem(
     const std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>> & _arg)
   {
     this->poem = _arg;
-    return *this;
-  }
-  Type & set__priority(
-    const int32_t & _arg)
-  {
-    this->priority = _arg;
     return *this;
   }
 
@@ -117,9 +100,6 @@ struct Poem_Goal_
   bool operator==(const Poem_Goal_ & other) const
   {
     if (this->poem != other.poem) {
-      return false;
-    }
-    if (this->priority != other.priority) {
       return false;
     }
     return true;

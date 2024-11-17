@@ -253,16 +253,6 @@
               "nested_type_name": ""
             },
             "default_value": ""
-          },
-          {
-            "name": "priority",
-            "type": {
-              "type_id": 6,
-              "capacity": 0,
-              "string_capacity": 0,
-              "nested_type_name": ""
-            },
-            "default_value": ""
           }
         ]
       },
@@ -476,7 +466,7 @@
   "type_hashes": [
     {
       "type_name": "custom_interfaces/action/Poem",
-      "hash_string": "RIHS01_d34fd37b69341e2ca312a88e0fbf3662bc8fa4d536f430be0d27404f4f874b9b"
+      "hash_string": "RIHS01_c9014564191ea5e4505288e9b41f592641add39fff601b0a22e023ac64a70892"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -508,7 +498,7 @@
     },
     {
       "type_name": "custom_interfaces/action/Poem_Goal",
-      "hash_string": "RIHS01_2528c8221135a462e553511fe5666f3eda92c43d0bb59d265f80c175df90924a"
+      "hash_string": "RIHS01_a56f4931923d61cf2b9d6f0012dce3d9c51748c706cfa7a2fe2a487d25e62938"
     },
     {
       "type_name": "custom_interfaces/action/Poem_Result",
@@ -516,15 +506,15 @@
     },
     {
       "type_name": "custom_interfaces/action/Poem_SendGoal",
-      "hash_string": "RIHS01_159cf569b62cd6823d36a14a6c59fcec08d952d78d993f70bc17bfb553acc213"
+      "hash_string": "RIHS01_16984c2652d3f31be74960b6a497d4e5f153e8930f1aa649cf6b20e6fbcead70"
     },
     {
       "type_name": "custom_interfaces/action/Poem_SendGoal_Event",
-      "hash_string": "RIHS01_72c05077f8646bd45c1a10bfffc4ac5fba185310b1e7332577a086d4bef69fd1"
+      "hash_string": "RIHS01_0e34486a9103b78d35fb47f10391cb7fdff053b79b91df36101d8b8dbbd2a3e1"
     },
     {
       "type_name": "custom_interfaces/action/Poem_SendGoal_Request",
-      "hash_string": "RIHS01_c22a95cbcf671481f43e0e1b59f6eae99e634dd43d762767a90ba0e47a00e2c5"
+      "hash_string": "RIHS01_2c629ea44bc21b9851ce02b3aa4c7c4c759b960fd8f25b7002f5d513718bb1c6"
     },
     {
       "type_name": "custom_interfaces/action/Poem_SendGoal_Response",

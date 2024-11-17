@@ -9,8 +9,6 @@ module custom_interfaces {
       "Goal")
     struct Poem_Goal {
       sequence<string> poem;
-
-      int32 priority;
     };
     @verbatim (language="comment", text=
       "Result")

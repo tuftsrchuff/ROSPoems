@@ -21,32 +21,16 @@ namespace action
 namespace builder
 {
 
-class Init_Poem_Goal_priority
-{
-public:
-  explicit Init_Poem_Goal_priority(::custom_interfaces::action::Poem_Goal & msg)
-  : msg_(msg)
-  {}
-  ::custom_interfaces::action::Poem_Goal priority(::custom_interfaces::action::Poem_Goal::_priority_type arg)
-  {
-    msg_.priority = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::custom_interfaces::action::Poem_Goal msg_;
-};
-
 class Init_Poem_Goal_poem
 {
 public:
   Init_Poem_Goal_poem()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Poem_Goal_priority poem(::custom_interfaces::action::Poem_Goal::_poem_type arg)
+  ::custom_interfaces::action::Poem_Goal poem(::custom_interfaces::action::Poem_Goal::_poem_type arg)
   {
     msg_.poem = std::move(arg);
-    return Init_Poem_Goal_priority(msg_);
+    return std::move(msg_);
   }
 
 private:

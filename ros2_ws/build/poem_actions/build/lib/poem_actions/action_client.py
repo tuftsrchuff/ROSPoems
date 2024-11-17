@@ -7,16 +7,25 @@ from custom_interfaces.action import Poem
 from rclpy.action import ActionClient
 from rclpy.action.client import ClientGoalHandle, GoalStatus
 import requests
-import time
+
+'''
+    Action client node that requests a url endpoint every second for new poems.
+    If a new poem is received it sends the poems to an action server to process.
+'''
 
 class PoemsClientNode(Node):
     def __init__(self):
         super().__init__("poems_client")
         self.poem_client_ = ActionClient(self, Poem, "poems")
-        self.url = "http://127.0.0.1:5000/mission"
         self.timer = self.create_timer(1.0, self.timer_callback)
         self.poems = []
-    
+        self.declare_parameter("url", "asdf")
+
+        self.url = self.get_parameter("url").value
+
+
+    #Every second this executes a GET request to url endpoint, requesting
+    #for new poems. If poems received sends goal to action server
     def timer_callback(self):
         try:
             params = {
@@ -24,24 +33,24 @@ class PoemsClientNode(Node):
             }
             response = requests.get(self.url, params=params)
 
-            #Need to update with
+            #Verify new poems received with update flag
             data = response.json()
             if data.get("update"):
                 self.poems = data.get("poems")
 
-                #TODO: Update with poem to process
+                #Send each poem to action server
                 for poem in self.poems:
-                    self.send_goal(poem)
+                    self.send_goal(poem.get("poem"))
+            
             else:
                 self.get_logger().info("No new poems")
-            print(f"Response code: {response.status_code}")
-            print(f"Response: {response.text}")
 
         except Exception as e:
             self.get_logger().error(f"Error during request: {e}")
             return
 
 
+    #Send goal to action server with poem to process
     def send_goal(self, poem):
         #Wait for the server
         self.poem_client_.wait_for_server()
@@ -49,21 +58,16 @@ class PoemsClientNode(Node):
         #Create a goal
         goal = Poem.Goal()
         goal.poem = poem
-        goal.priority = 1
 
-        #Send the goal
+        #Send the goal asynchronously with requests for feedback
         self.get_logger().info("Sending goal")
 
         self.poem_client_.\
             send_goal_async(goal, feedback_callback=self.goal_feedback_callback).\
             add_done_callback(self.goal_response_callback)
-        
-    def cancel_goal(self):
-        self.get_logger().info("Send a cancel request")
-        self.goal_handle_.cancel_goal_async()
-        self.timer_.cancel()
+
     
-    #Receive whether goal was accepted or not
+    #Validate that goal accepted by action server, monitor for finished result
     def goal_response_callback(self, future):
         self.goal_handle_ : ClientGoalHandle = future.result()
         if self.goal_handle_.accepted:
@@ -73,6 +77,7 @@ class PoemsClientNode(Node):
         else:
             self.get_logger().warn("Goal got rejected")
 
+    #Return result from action server and poem processing
     def goal_result_callback(self, future):
         status = future.result().status
         result = future.result().result
@@ -85,17 +90,17 @@ class PoemsClientNode(Node):
         
         self.get_logger().info("Result: " + str(result.message))
 
-    
+    #Feedback for amount of poem processed by action server
     def goal_feedback_callback(self, feedback_msg):
         progress = feedback_msg.feedback.progress
-        self.get_logger().info("Got feedback: " + str(progress))
+        self.get_logger().info("Poem processed: " + str(progress) + "%")
 
 
 
 
 
 def main(args=None):
-    #Starts ROS2 communication without this line it fails
+    #Initiate client
     rclpy.init(args = args)
     node = PoemsClientNode()
     rclpy.spin(node)

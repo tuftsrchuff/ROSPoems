@@ -38,16 +38,6 @@
               "nested_type_name": ""
             },
             "default_value": ""
-          },
-          {
-            "name": "priority",
-            "type": {
-              "type_id": 6,
-              "capacity": 0,
-              "string_capacity": 0,
-              "nested_type_name": ""
-            },
-            "default_value": ""
           }
         ]
       },
@@ -71,11 +61,11 @@
   "type_hashes": [
     {
       "type_name": "custom_interfaces/action/Poem_SendGoal_Request",
-      "hash_string": "RIHS01_c22a95cbcf671481f43e0e1b59f6eae99e634dd43d762767a90ba0e47a00e2c5"
+      "hash_string": "RIHS01_2c629ea44bc21b9851ce02b3aa4c7c4c759b960fd8f25b7002f5d513718bb1c6"
     },
     {
       "type_name": "custom_interfaces/action/Poem_Goal",
-      "hash_string": "RIHS01_2528c8221135a462e553511fe5666f3eda92c43d0bb59d265f80c175df90924a"
+      "hash_string": "RIHS01_a56f4931923d61cf2b9d6f0012dce3d9c51748c706cfa7a2fe2a487d25e62938"
     },
     {
       "type_name": "unique_identifier_msgs/msg/UUID",

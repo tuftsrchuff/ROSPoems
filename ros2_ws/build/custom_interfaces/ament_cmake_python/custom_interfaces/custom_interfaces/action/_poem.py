@@ -63,20 +63,17 @@ class Poem_Goal(metaclass=Metaclass_Poem_Goal):
 
     __slots__ = [
         '_poem',
-        '_priority',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
         'poem': 'sequence<string>',
-        'priority': 'int32',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -89,7 +86,6 @@ class Poem_Goal(metaclass=Metaclass_Poem_Goal):
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.poem = kwargs.get('poem', [])
-        self.priority = kwargs.get('priority', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -123,8 +119,6 @@ class Poem_Goal(metaclass=Metaclass_Poem_Goal):
             return False
         if self.poem != other.poem:
             return False
-        if self.priority != other.priority:
-            return False
         return True
 
     @classmethod
@@ -154,21 +148,6 @@ class Poem_Goal(metaclass=Metaclass_Poem_Goal):
                  True), \
                 "The 'poem' field must be a set or sequence and each value of type 'str'"
         self._poem = value
-
-    @builtins.property
-    def priority(self):
-        """Message field 'priority'."""
-        return self._priority
-
-    @priority.setter
-    def priority(self, value):
-        if self._check_fields:
-            assert \
-                isinstance(value, int), \
-                "The 'priority' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'priority' field must be an integer in [-2147483648, 2147483647]"
-        self._priority = value
 
 
 # Import statements for member types

@@ -83,7 +83,7 @@ void resize_function__Poem_Goal__poem(void * untyped_member, size_t size)
   member->resize(size);
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Poem_Goal_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Poem_Goal_message_member_array[1] = {
   {
     "poem",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
@@ -100,30 +100,13 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Poem_Goal_mes
     fetch_function__Poem_Goal__poem,  // fetch(index, &value) function pointer
     assign_function__Poem_Goal__poem,  // assign(index, value) function pointer
     resize_function__Poem_Goal__poem  // resize(index) function pointer
-  },
-  {
-    "priority",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(custom_interfaces::action::Poem_Goal, priority),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Poem_Goal_message_members = {
   "custom_interfaces::action",  // message namespace
   "Poem_Goal",  // message name
-  2,  // number of fields
+  1,  // number of fields
   sizeof(custom_interfaces::action::Poem_Goal),
   Poem_Goal_message_member_array,  // message members
   Poem_Goal_init_function,  // function to initialize message memory (memory has to be allocated)

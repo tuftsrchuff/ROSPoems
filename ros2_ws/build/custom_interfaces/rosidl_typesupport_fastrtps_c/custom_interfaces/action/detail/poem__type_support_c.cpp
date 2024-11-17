@@ -70,11 +70,6 @@ static bool _Poem_Goal__cdr_serialize(
     }
   }
 
-  // Field name: priority
-  {
-    cdr << ros_message->priority;
-  }
-
   return true;
 }
 
@@ -117,11 +112,6 @@ static bool _Poem_Goal__cdr_deserialize(
     }
   }
 
-  // Field name: priority
-  {
-    cdr >> ros_message->priority;
-  }
-
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -150,12 +140,6 @@ size_t get_serialized_size_custom_interfaces__action__Poem_Goal(
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
         (array_ptr[index].size + 1);
     }
-  }
-  // field.name priority
-  {
-    size_t item_size = sizeof(ros_message->priority);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
   return current_alignment - initial_alignment;
@@ -202,14 +186,6 @@ size_t max_serialized_size_custom_interfaces__action__Poem_Goal(
         1;
     }
   }
-  // member: priority
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -219,7 +195,7 @@ size_t max_serialized_size_custom_interfaces__action__Poem_Goal(
     using DataType = custom_interfaces__action__Poem_Goal;
     is_plain =
       (
-      offsetof(DataType, priority) +
+      offsetof(DataType, poem) +
       last_member_size
       ) == ret_val;
   }

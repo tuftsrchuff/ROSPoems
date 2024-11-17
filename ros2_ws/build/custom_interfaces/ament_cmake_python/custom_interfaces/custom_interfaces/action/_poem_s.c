@@ -100,15 +100,6 @@ bool custom_interfaces__action__poem__goal__convert_from_py(PyObject * _pymsg, v
     }
     Py_DECREF(field);
   }
-  {  // priority
-    PyObject * field = PyObject_GetAttrString(_pymsg, "priority");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->priority = (int32_t)PyLong_AsLong(field);
-    Py_DECREF(field);
-  }
 
   return true;
 }
@@ -151,17 +142,6 @@ PyObject * custom_interfaces__action__poem__goal__convert_to_py(void * raw_ros_m
     assert(PySequence_Check(field));
     {
       int rc = PyObject_SetAttrString(_pymessage, "poem", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // priority
-    PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->priority);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "priority", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

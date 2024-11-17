@@ -26,7 +26,6 @@ custom_interfaces__action__Poem_Goal__init(custom_interfaces__action__Poem_Goal 
     custom_interfaces__action__Poem_Goal__fini(msg);
     return false;
   }
-  // priority
   return true;
 }
 
@@ -38,7 +37,6 @@ custom_interfaces__action__Poem_Goal__fini(custom_interfaces__action__Poem_Goal 
   }
   // poem
   rosidl_runtime_c__String__Sequence__fini(&msg->poem);
-  // priority
 }
 
 bool
@@ -51,10 +49,6 @@ custom_interfaces__action__Poem_Goal__are_equal(const custom_interfaces__action_
   if (!rosidl_runtime_c__String__Sequence__are_equal(
       &(lhs->poem), &(rhs->poem)))
   {
-    return false;
-  }
-  // priority
-  if (lhs->priority != rhs->priority) {
     return false;
   }
   return true;
@@ -74,8 +68,6 @@ custom_interfaces__action__Poem_Goal__copy(
   {
     return false;
   }
-  // priority
-  output->priority = input->priority;
   return true;
 }
 

@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "custom_interfaces/action/detail/poem__struct.h"
 #include "custom_interfaces/action/detail/poem__type_support.h"
 #include "custom_interfaces/action/detail/poem__functions.h"
+#include "custom_interfaces/action/detail/poem__struct.h"
 
 #ifdef __cplusplus
 extern "C"

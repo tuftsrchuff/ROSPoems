@@ -1,0 +1,16 @@
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/launch/poem_app.launch.py
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/ament_index/resource_index/package_run_dependencies/poem_bringup
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/ament_index/resource_index/parent_prefix_path/poem_bringup
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/environment/ament_prefix_path.sh
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/environment/ament_prefix_path.dsv
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/environment/path.sh
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/environment/path.dsv
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/local_setup.bash
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/local_setup.sh
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/local_setup.zsh
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/local_setup.dsv
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/package.dsv
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/ament_index/resource_index/packages/poem_bringup
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/cmake/poem_bringupConfig.cmake
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/cmake/poem_bringupConfig-version.cmake
+/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/package.xml

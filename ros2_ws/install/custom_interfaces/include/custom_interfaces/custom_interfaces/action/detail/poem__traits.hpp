@@ -40,13 +40,6 @@ inline void to_flow_style_yaml(
       }
       out << "]";
     }
-    out << ", ";
-  }
-
-  // member: priority
-  {
-    out << "priority: ";
-    rosidl_generator_traits::value_to_yaml(msg.priority, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -73,16 +66,6 @@ inline void to_block_style_yaml(
         out << "\n";
       }
     }
-  }
-
-  // member: priority
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "priority: ";
-    rosidl_generator_traits::value_to_yaml(msg.priority, out);
-    out << "\n";
   }
 }  // NOLINT(readability/fn_size)
 

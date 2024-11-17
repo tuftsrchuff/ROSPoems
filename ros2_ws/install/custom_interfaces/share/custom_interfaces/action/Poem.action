@@ -1,6 +1,5 @@
 # Goal
 string[] poem
-int32 priority
 ---
 # Result
 bool success

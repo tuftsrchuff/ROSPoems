@@ -1,0 +1,47 @@
+[0.240s] Invoking command in '/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ryan/Desktop/ROSPoems/ros2_ws/install/poem_actions:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions:/home/ryan/ros2_ws/install/actions_py:/home/ryan/ros2_ws/install/my_py_pkg:/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ryan/Desktop/FleetGlue/ros2_ws/src/poem_bringup -DCMAKE_INSTALL_PREFIX=/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup
+[0.372s] -- The C compiler identification is GNU 11.4.0
+[0.483s] -- The CXX compiler identification is GNU 11.4.0
+[0.490s] -- Detecting C compiler ABI info
+[0.555s] -- Detecting C compiler ABI info - done
+[0.560s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.560s] -- Detecting C compile features
+[0.561s] -- Detecting C compile features - done
+[0.563s] -- Detecting CXX compiler ABI info
+[0.664s] -- Detecting CXX compiler ABI info - done
+[0.672s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.672s] -- Detecting CXX compile features
+[0.673s] -- Detecting CXX compile features - done
+[0.676s] -- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.845s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.926s] -- Found ament_lint_auto: 0.14.4 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[0.992s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.992s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.992s] -- Added test 'lint_cmake' to check CMake code style
+[0.993s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.993s] -- Added test 'xmllint' to check XML markup files
+[0.995s] -- Configuring done
+[0.998s] -- Generating done
+[0.998s] -- Build files have been written to: /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup
+[1.003s] Invoked command in '/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ryan/Desktop/ROSPoems/ros2_ws/install/poem_actions:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions:/home/ryan/ros2_ws/install/actions_py:/home/ryan/ros2_ws/install/my_py_pkg:/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ryan/Desktop/FleetGlue/ros2_ws/src/poem_bringup -DCMAKE_INSTALL_PREFIX=/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup
+[1.004s] Invoking command in '/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ryan/Desktop/ROSPoems/ros2_ws/install/poem_actions:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions:/home/ryan/ros2_ws/install/actions_py:/home/ryan/ros2_ws/install/my_py_pkg:/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup -- -j16 -l16
+[1.039s] Invoked command in '/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ryan/Desktop/ROSPoems/ros2_ws/install/poem_actions:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions:/home/ryan/ros2_ws/install/actions_py:/home/ryan/ros2_ws/install/my_py_pkg:/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup -- -j16 -l16
+[1.061s] Invoking command in '/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ryan/Desktop/ROSPoems/ros2_ws/install/poem_actions:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions:/home/ryan/ros2_ws/install/actions_py:/home/ryan/ros2_ws/install/my_py_pkg:/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup
+[1.068s] -- Install configuration: ""
+[1.068s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/launch
+[1.068s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/launch/poem_app.launch.py
+[1.068s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/ament_index/resource_index/package_run_dependencies/poem_bringup
+[1.068s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/ament_index/resource_index/parent_prefix_path/poem_bringup
+[1.068s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/environment/ament_prefix_path.sh
+[1.069s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/environment/ament_prefix_path.dsv
+[1.069s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/environment/path.sh
+[1.069s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/environment/path.dsv
+[1.069s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/local_setup.bash
+[1.069s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/local_setup.sh
+[1.069s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/local_setup.zsh
+[1.069s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/local_setup.dsv
+[1.070s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/package.dsv
+[1.070s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/ament_index/resource_index/packages/poem_bringup
+[1.070s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/cmake/poem_bringupConfig.cmake
+[1.070s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/cmake/poem_bringupConfig-version.cmake
+[1.070s] -- Installing: /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_bringup/share/poem_bringup/package.xml
+[1.073s] Invoked command in '/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ryan/Desktop/ROSPoems/ros2_ws/install/poem_actions:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions:/home/ryan/ros2_ws/install/actions_py:/home/ryan/ros2_ws/install/my_py_pkg:/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_bringup

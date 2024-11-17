@@ -2,11 +2,16 @@ from flask import Flask, request, jsonify
 import json
 
 app = Flask(__name__)
-poemsCount = 1
+poemsCount = None
+
+'''
+    API to handle GET/POST requests to serve list of poems and update json
+    db with additional poems
+'''
 
 @app.route('/mission', methods=['GET'])
 def get_data():
-    #Check poems on client vs server
+    #Check poem counts on client vs server
     poems = int(request.args.get('poems'))
     retMessage = {
         "update": False,
@@ -14,7 +19,7 @@ def get_data():
     }
     
     if poems != poemsCount:
-        #Return full list of poems, new ones added
+        #Return full list of poems, client has different number of poems
         with open("poems.json", "r") as file:
             data = json.load(file)
             retMessage["poems"], retMessage["update"] = data, True
@@ -49,7 +54,8 @@ def add_data():
 
     return jsonify({"Added": True})
 
-#Base load of poem numbers
+#Base load of poem numbers when starting the server
+#Saves loading full list each time a check is needed
 def loadPoems():
     with open("poems.json", "r") as file:
         data = json.load(file)

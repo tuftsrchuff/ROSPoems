@@ -90,7 +90,7 @@ bool custom_interfaces__action__Poem_Goal__rosidl_typesupport_introspection_c__r
   return rosidl_runtime_c__String__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__action__Poem_Goal__rosidl_typesupport_introspection_c__Poem_Goal_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__action__Poem_Goal__rosidl_typesupport_introspection_c__Poem_Goal_message_member_array[1] = {
   {
     "poem",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -107,30 +107,13 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__acti
     custom_interfaces__action__Poem_Goal__rosidl_typesupport_introspection_c__fetch_function__Poem_Goal__poem,  // fetch(index, &value) function pointer
     custom_interfaces__action__Poem_Goal__rosidl_typesupport_introspection_c__assign_function__Poem_Goal__poem,  // assign(index, value) function pointer
     custom_interfaces__action__Poem_Goal__rosidl_typesupport_introspection_c__resize_function__Poem_Goal__poem  // resize(index) function pointer
-  },
-  {
-    "priority",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(custom_interfaces__action__Poem_Goal, priority),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers custom_interfaces__action__Poem_Goal__rosidl_typesupport_introspection_c__Poem_Goal_message_members = {
   "custom_interfaces__action",  // message namespace
   "Poem_Goal",  // message name
-  2,  // number of fields
+  1,  // number of fields
   sizeof(custom_interfaces__action__Poem_Goal),
   custom_interfaces__action__Poem_Goal__rosidl_typesupport_introspection_c__Poem_Goal_message_member_array,  // message members
   custom_interfaces__action__Poem_Goal__rosidl_typesupport_introspection_c__Poem_Goal_init_function,  // function to initialize message memory (memory has to be allocated)

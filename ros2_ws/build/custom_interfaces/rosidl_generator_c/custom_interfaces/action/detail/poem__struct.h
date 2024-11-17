@@ -25,7 +25,6 @@ extern "C"
 typedef struct custom_interfaces__action__Poem_Goal
 {
   rosidl_runtime_c__String__Sequence poem;
-  int32_t priority;
 } custom_interfaces__action__Poem_Goal;
 
 // Struct for a sequence of custom_interfaces__action__Poem_Goal.
