@@ -1,0 +1,9 @@
+source;share/poem_actions/hook/pythonpath.ps1
+source;share/poem_actions/hook/pythonpath.dsv
+source;share/poem_actions/hook/pythonpath.sh
+source;share/poem_actions/hook/ament_prefix_path.ps1
+source;share/poem_actions/hook/ament_prefix_path.dsv
+source;share/poem_actions/hook/ament_prefix_path.sh
+source;../../build/poem_actions/share/poem_actions/hook/pythonpath_develop.ps1
+source;../../build/poem_actions/share/poem_actions/hook/pythonpath_develop.dsv
+source;../../build/poem_actions/share/poem_actions/hook/pythonpath_develop.sh

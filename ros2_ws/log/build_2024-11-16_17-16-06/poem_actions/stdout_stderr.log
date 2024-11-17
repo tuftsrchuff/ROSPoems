@@ -1,0 +1,17 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing poem_actions.egg-info/PKG-INFO
+writing dependency_links to poem_actions.egg-info/dependency_links.txt
+writing entry points to poem_actions.egg-info/entry_points.txt
+writing requirements to poem_actions.egg-info/requires.txt
+writing top-level names to poem_actions.egg-info/top_level.txt
+reading manifest file 'poem_actions.egg-info/SOURCES.txt'
+writing manifest file 'poem_actions.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages/poem-actions.egg-link (link to .)
+Installing poems_client script to /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/poem_actions
+
+Installed /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions
+running symlink_data

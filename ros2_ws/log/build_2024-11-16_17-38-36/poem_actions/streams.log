@@ -1,0 +1,37 @@
+[0.659s] Invoking command in '/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/build
+[0.862s] running develop
+[0.862s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.862s]   warnings.warn(
+[1.001s] Removing /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages/poem-actions.egg-link (link to .)
+[1.024s] Invoked command in '/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/build
+[1.026s] Invoking command in '/home/ryan/Desktop/FleetGlue/ros2_ws/src/poem_actions': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/poem_actions build --build-base /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/build install --record /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/install.log --single-version-externally-managed install_data --force
+[1.209s] running egg_info
+[1.210s] writing ../../build/poem_actions/poem_actions.egg-info/PKG-INFO
+[1.210s] writing dependency_links to ../../build/poem_actions/poem_actions.egg-info/dependency_links.txt
+[1.210s] writing entry points to ../../build/poem_actions/poem_actions.egg-info/entry_points.txt
+[1.210s] writing requirements to ../../build/poem_actions/poem_actions.egg-info/requires.txt
+[1.210s] writing top-level names to ../../build/poem_actions/poem_actions.egg-info/top_level.txt
+[1.211s] reading manifest file '../../build/poem_actions/poem_actions.egg-info/SOURCES.txt'
+[1.212s] writing manifest file '../../build/poem_actions/poem_actions.egg-info/SOURCES.txt'
+[1.212s] running build
+[1.212s] running build_py
+[1.212s] copying poem_actions/action_client.py -> /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/build/lib/poem_actions
+[1.213s] copying poem_actions/action_server.py -> /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/build/lib/poem_actions
+[1.213s] running install
+[1.213s] running install_lib
+[1.213s] creating /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages/poem_actions
+[1.214s] copying /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/build/lib/poem_actions/__init__.py -> /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages/poem_actions
+[1.214s] copying /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/build/lib/poem_actions/action_client.py -> /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages/poem_actions
+[1.214s] copying /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/build/lib/poem_actions/action_server.py -> /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages/poem_actions
+[1.214s] byte-compiling /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages/poem_actions/__init__.py to __init__.cpython-310.pyc
+[1.214s] byte-compiling /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages/poem_actions/action_client.py to action_client.cpython-310.pyc
+[1.215s] byte-compiling /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages/poem_actions/action_server.py to action_server.cpython-310.pyc
+[1.215s] running install_data
+[1.216s] copying resource/poem_actions -> /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/share/ament_index/resource_index/packages
+[1.216s] copying package.xml -> /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/share/poem_actions
+[1.216s] running install_egg_info
+[1.217s] Copying ../../build/poem_actions/poem_actions.egg-info to /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages/poem_actions-0.0.0-py3.10.egg-info
+[1.218s] running install_scripts
+[1.234s] Installing poems_client script to /home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/poem_actions
+[1.234s] writing list of installed files to '/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/install.log'
+[1.258s] Invoked command in '/home/ryan/Desktop/FleetGlue/ros2_ws/src/poem_actions' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/poem_actions build --build-base /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/build install --record /home/ryan/Desktop/FleetGlue/ros2_ws/build/poem_actions/install.log --single-version-externally-managed install_data --force

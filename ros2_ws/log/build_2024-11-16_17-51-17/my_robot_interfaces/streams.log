@@ -1,0 +1,31 @@
+[0.012s] Invoking command in '/home/ryan/Desktop/FleetGlue/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions:/home/ryan/ros2_ws/install/actions_py:/home/ryan/ros2_ws/install/my_py_pkg:/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ryan/Desktop/FleetGlue/ros2_ws/src/poem_interfaces -DCMAKE_INSTALL_PREFIX=/home/ryan/Desktop/FleetGlue/ros2_ws/install/my_robot_interfaces
+[0.059s] -- The C compiler identification is GNU 11.4.0
+[0.104s] -- The CXX compiler identification is GNU 11.4.0
+[0.110s] -- Detecting C compiler ABI info
+[0.170s] -- Detecting C compiler ABI info - done
+[0.175s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.175s] -- Detecting C compile features
+[0.176s] -- Detecting C compile features - done
+[0.178s] -- Detecting CXX compiler ABI info
+[0.248s] -- Detecting CXX compiler ABI info - done
+[0.258s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.258s] -- Detecting CXX compile features
+[0.259s] -- Detecting CXX compile features - done
+[0.262s] -- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.424s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.504s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[0.508s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.548s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.579s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[0.842s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[0.842s]   ament_package_xml() package name 'my_robot_interfaces' in '/package.xml'
+[0.842s]   does not match current PROJECT_NAME 'poem_interfaces'.  You must call
+[0.842s]   project() with the same package name before.
+[0.842s] Call Stack (most recent call first):
+[0.842s]   /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:256 (ament_package_xml)
+[0.842s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[0.843s] 
+[0.843s] [0m
+[0.843s] -- Configuring incomplete, errors occurred!
+[0.843s] See also "/home/ryan/Desktop/FleetGlue/ros2_ws/build/my_robot_interfaces/CMakeFiles/CMakeOutput.log".
+[0.849s] Invoked command in '/home/ryan/Desktop/FleetGlue/ros2_ws/build/my_robot_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ryan/Desktop/FleetGlue/ros2_ws/install/poem_actions:/home/ryan/ros2_ws/install/actions_py:/home/ryan/ros2_ws/install/my_py_pkg:/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ryan/Desktop/FleetGlue/ros2_ws/src/poem_interfaces -DCMAKE_INSTALL_PREFIX=/home/ryan/Desktop/FleetGlue/ros2_ws/install/my_robot_interfaces

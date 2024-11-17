@@ -1,0 +1,10 @@
+# Goal
+string[] poem
+int32 priority
+---
+# Result
+bool success
+string message
+---
+#Feedback
+int32 progress

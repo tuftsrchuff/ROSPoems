@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from custom_interfaces/action/Poem.action
+// generated code does not contain a copyright notice
+
+
+module custom_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct Poem_Goal {
+      sequence<string> poem;
+
+      int32 priority;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct Poem_Result {
+      boolean success;
+
+      string message;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct Poem_Feedback {
+      int32 progress;
+    };
+  };
+};
