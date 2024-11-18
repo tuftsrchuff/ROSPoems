@@ -1,0 +1,3 @@
+[console_scripts]
+poems_client = action_client.action_client:main
+

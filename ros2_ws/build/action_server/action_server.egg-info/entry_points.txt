@@ -1,0 +1,3 @@
+[console_scripts]
+poems_server = action_server.action_server:main
+
