@@ -13,8 +13,8 @@ Return Message =
     {
         "update": Boolean,
         "poems": 2D array of poems, each index is a separate line in the array
-    }
-Ex:
+    }\\
+Ex:\\
 Message = 
     {
         "update": True,
