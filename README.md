@@ -2,13 +2,13 @@
 This repository contains code for a flask application and two ROS action nodes (a server and client respectively) that communicate poems to each other. The ROS action client makes a GET request every 1 second to the flask API endpoint, checking if there are new poems available. If there are, it then sends each poem to the action server for processing. The action server can handle multiple requests simulataneously, queuing each new poem until its current processing task is done. All clients receive feedback on the status of their poem processing from the action server. 
 
 ## API
-The API handles GET and POST requests using Flask at the /mission endpoint. The GET requests include one attribute: poems. This is simply the count of the number of poems a client has and if it does not match the amount of poems in the poems.json database then it will receive an update with the full list of poems.
+The API handles GET and POST requests using Flask at the /mission endpoint. The GET requests include one attribute: poems. This is simply the count of the number of poems a client has and if it does not match the amount of poems in the poems.json database then it will receive an update with the full list of poems.<br/>
 GET API:<br/>
 Message = <br/>
     {<br/>
         "poems": Int<br/>
     } <br/>
-
+<br/>
 Return Message =<br/>
     {<br/>
         "update": Boolean,<br/>
@@ -21,22 +21,22 @@ Message = <br/>
         "poems": [["Poem 1 Line 1", "Poem 1 Line 2"], ["Poem 2 Line 1", "Poem 1 Line 1"]]<br/>
     }<br/>
 
-
-POST API:
-Message = 
-    {
-        "poems": 2D array of poems, each index is a separate line in the array
-    }
-Ex:
-Message = 
-    {
-        "poems": [["Poem 1 Line 1", "Poem 1 Line 2"], ["Poem 2 Line 1", "Poem 1 Line 1"]]
-    }
-
-Return Message= 
-    {
-        "Accepted": Boolean
-    }
+<br/>
+POST API:<br/>
+Message = <br/>
+    {<br/>
+        "poems": 2D array of poems, each index is a separate line in the array<br/>
+    }<br/>
+Ex:<br/>
+Message = <br/>
+    {<br/>
+        "poems": [["Poem 1 Line 1", "Poem 1 Line 2"], ["Poem 2 Line 1", "Poem 1 Line 1"]]<br/>
+    }<br/>
+<br/>
+Return Message= <br/>
+    {<br/>
+        "Accepted": Boolean<br/>
+    }<br/>
 
 ## ROS Actions
 ### Action Server
